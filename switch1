@@ -1,0 +1,43 @@
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		int a = scan.nextInt();
+		switch(a)
+		{
+		case 0:
+		{
+			System.out.println("	MONDAY");
+		}
+		case 1:
+		{
+			System.out.println("TEUSDAY");
+		}
+		case 2:
+		{
+			System.out.println("WEDNESDAY");
+		}
+		case 3:
+		{
+			System.out.println("THURSDAY");
+		}
+		case 4:
+		{
+			System.out.println("FRIDAY");
+		}
+		case 5:
+		{
+			System.out.println("SATURDAY");
+		}
+		case 6:
+		{
+			System.out.println("SUNDAY");
+			break;
+		}
+		default:
+		{
+			System.out.println("NOTHING");
+		}
+		}
+
+	}
+
+}
