@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        String a = sc.next();
+        String b = sc.next();
+
+        int i = a.length() - 1;
+        int j = b.length() - 1;
+        int carry = 0;
+        int carryCount = 0;
+
+        while (i >= 0 || j >= 0) {
+            int digitA = (i >= 0) ? a.charAt(i) - '0' : 0;
+            int digitB = (j >= 0) ? b.charAt(j) - '0' : 0;
+
+            int sum = digitA + digitB + carry;
+            if (sum >= 10) {
+                carryCount++;
+                carry = 1;
+            } else {
+                carry = 0;
+            }
+
+            i--;
+            j--;
+        }
+
+        System.out.println(carryCount);
+        sc.close();
+    }
+}
