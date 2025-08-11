@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class CompatibilityCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+   
+        int n = scanner.nextInt();
+
+        
+        int[] bobScores = new int[n];
+        int[] aliceScores = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            bobScores[i] = scanner.nextInt();
+        }
+
+    
+        for (int i = 0; i < n; i++) {
+            aliceScores[i] = scanner.nextInt();
+        }
+
+       
+        boolean compatible = true;
+        for (int i = 0; i < n; i++) {
+            if (bobScores[i] < aliceScores[i]) {
+                compatible = false;
+                break;
+            }
+        }
+
+      
+        if (compatible) {
+            System.out.println("Compatibility Achieved!");
+        } else {
+            System.out.println("Incompatibility Detected!");
+        }
+    }
+}
+ 1056
