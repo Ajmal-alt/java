@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class while5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num=sc.nextInt();
+		int sum=0;
+		int tum=0;
+		while(num >0)
+		{ 
+			int temp=num%10;
+			sum= sum+temp;
+			num = num/10;
+			
+		}
+//        System.out.println(sum);
+
+		while(sum >0)
+		{ 
+			int temp1=sum%10;
+			tum= tum+temp1;
+			sum = sum/10;
+			
+		}
+		System.out.println(tum);
+		}
+	
+
+}
