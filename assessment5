@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class assessment1027 {
+
+	public static void main(String[] args) {
+	     Scanner scan = new Scanner (System.in);
+	        int a = scan.nextInt();
+	        int b = scan.nextInt();
+	        float c = scan.nextFloat();
+	        float d = scan.nextFloat();
+	        float e = a/b;
+	        if(d-c<=e)
+	        {
+	        System.out.println("Yes");
+	        }
+	        else
+	        {
+	            System.out.println("Invalid Input");
+	        }
+
+	}
+
+}
