@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class PalindromicPrimes {
+
+   
+    public static boolean isPrime(int num) {
+        if (num < 2) return false;
+        if (num == 2) return true;
+        if (num % 2 == 0) return false;
+        for (int i = 3; i <= Math.sqrt(num); i += 2) {
+            if (num % i == 0) return false;
+        }
+        return true;
+    }
+
+   
+    public static boolean isPalindrome(int num) {
+        String s = Integer.toString(num);
+        return s.equals(new StringBuilder(s).reverse().toString());
+    }
+
+   
+    public static void generatePalindromicPrimes(int n) {
+        int count = 0;
+        int num = 2;
+        System.out.println("First " + n + " palindromic prime numbers: ");
+        while (count < n) {
+            if (isPalindrome(num) && isPrime(num)) {
+                System.out.println(num + " ");
+                count++;
+            }
+            num++;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        generatePalindromicPrimes(n);
+    }
+}
