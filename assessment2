@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class assessment1020 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = a/b;
+        int d = a%b;
+        System.out.println("The number of students in each team is "+c+" and left out is "+d);
+
+	}
+
+}
