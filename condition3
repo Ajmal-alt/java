@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class condition3 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		int a = scan.nextInt();
+		if(a<100)
+		{
+			if(a%2==0)
+			{
+			System.out.println("YES");
+			
+			int b = a/2;
+			int c = b;
+			System.out.print(b);
+			System.out.println(c);
+			}
+			else 
+			{
+				System.out.println("NO");
+			}
+		}
+		else
+			System.out.println("Invalid");
+	}
+
+}
