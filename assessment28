@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class QuantumArrayExplorer {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            int num = scanner.nextInt();
+            sum += num;
+        }
+        double mean = (double) sum / n;
+        System.out.println("Quantum Mean Calculation Completed:");
+        System.out.printf("The quantum mean of the array is %.2f\n", mean);
+        System.out.println("Congratulations, Quantum Explorer!");
+    }
+}
