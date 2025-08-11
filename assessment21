@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class AppleMatrixFusion {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        int n = scanner.nextInt();
+
+        
+        int[] ramu = new int[n];
+        int[] raju = new int[n];
+        int[] fused = new int[n];
+
+        
+        for (int i = 0; i < n; i++) {
+            ramu[i] = scanner.nextInt();
+        }
+
+
+        for (int i = 0; i < n; i++) {
+            raju[i] = scanner.nextInt();
+        }
+
+    
+        for (int i = 0; i < n; i++) {
+            fused[i] = ramu[i] + raju[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(fused[i] + " ");
+        }
+    }
+} 1055
