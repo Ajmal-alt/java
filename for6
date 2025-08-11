@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class for6 {
+
+	public static void main(String[] args) {
+	      Scanner scan = new Scanner (System.in);
+	      int num = scan.nextInt();
+	      int num2 = scan.nextInt();
+	      int gcd = 0;
+	      int min = (num<num2)?num:num2;
+	      for(int i = min;i>0;i--)
+	      {
+	    	   if(num%i == 0 && num2%i==0)
+	    	   {
+	    		   gcd=i;
+	    		   break;
+	    		  }
+	      }
+	System.out.println(gcd);      
+	}
+}
