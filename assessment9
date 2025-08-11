@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     
+        Scanner sc = new Scanner(System.in);
+        long totalDigits = sc.nextLong();
+
+        long pages = 0;
+        long digitsPerPage = 1;
+        long startPage = 1;
+
+        while (totalDigits > 0) {
+            long endPage = startPage * 10 - 1;
+            long pagesInRange = endPage - startPage + 1;
+
+            long digitsNeeded = pagesInRange * digitsPerPage;
+
+            if (totalDigits >= digitsNeeded) {
+                totalDigits -= digitsNeeded;
+                pages += pagesInRange;
+                digitsPerPage++;
+                startPage *= 10;
+            } else {
+               
+                if (totalDigits % digitsPerPage == 0) {
+                    pages += totalDigits / digitsPerPage;
+                    totalDigits = 0;
+                } else {
+                    System.out.println("Impossible!");
+                    return;
+                }
+            }
+        }
+
+        System.out.println(pages);
+        sc.close();
+    }
+}
