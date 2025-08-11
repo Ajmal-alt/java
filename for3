@@ -1,0 +1,19 @@
+public class for3 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int evencount = 0;
+		int i;
+		for(i=a;i<=b;i++)
+		{
+			if(i%2==0)
+			{
+				evencount++;
+			}
+		}     
+			System.out.println(evencount);
+}
+
+	}
