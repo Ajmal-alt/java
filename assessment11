@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int nails = sc.nextInt();
+        String middle = sc.next();
+        sc.close();
+
+        boolean[] used = new boolean[10];
+        for (char c : middle.toCharArray()) {
+            used[c - '0'] = true;
+        }
+
+        int bestFirst = 0, bestLast = 0;
+        int maxPricePerNail = 0;
+        int bestFullPrice = 0; 
+
+        for (int first = 0; first <= 9; first++) {
+            if (used[first]) continue;
+            for (int last = 0; last <= 9; last++) {
+                if (used[last] || last == first) continue;
+
+                String fullPriceStr = first + middle + last;
+                int fullPrice = Integer.parseInt(fullPriceStr);
+
+                int pricePerNail = fullPrice / nails;
+
+                if (pricePerNail > maxPricePerNail ||
+                   (pricePerNail == maxPricePerNail && fullPrice > bestFullPrice)) {
+                    maxPricePerNail = pricePerNail;
+                    bestFullPrice = fullPrice;
+                    bestFirst = first;
+                    bestLast = last;
+                }
+            }
+        }
+
+        System.out.println(bestFirst + " " + bestLast + " " + maxPricePerNail);
+    }
+}
