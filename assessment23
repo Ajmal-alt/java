@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class PUBGWeaponSelector {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of guns in the drop box: ");
+        int n = scanner.nextInt();
+        int maxFirepower = Integer.MIN_VALUE;
+        System.out.println("Enter the firepower of each gun:");
+        for (int i = 0; i < n; i++) {
+            int firepower = scanner.nextInt();
+            if (firepower > maxFirepower) {
+                maxFirepower = firepower;
+            }
+        }
+        System.out.println(maxFirepower + " is the maximum element in the array");
+    }
+}
+ 1054
