@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class charecter1 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+         char ch=scan.next().charAt(0);
+         char ch1=(char)(ch-32);
+         System.out.println(ch1);
+		
+
+	}
+
+}
