@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String str=scan.next();
+        String str1=scan.next();
+        if(str.equals(str1))
+        {
+            System.out.println("Celestial Confirmation! The strings align.");
+        }
+        else
+        {
+            System.out.println("Galactic Discrepancy! The strings do not align.");
+        }
+    } 
+}
