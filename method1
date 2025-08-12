@@ -1,0 +1,13 @@
+
+public class withoutreturntype {
+     public void display()
+     {
+    	 System.out.println("Hi Nice meet you");
+     }
+	public static void main(String[] args) { 
+	
+	withoutreturntype obj=new withoutreturntype();	
+	obj.display();
+	}
+
+	}
