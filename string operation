@@ -1,0 +1,32 @@
+public class string_operations {
+
+	public static void main(String[] args) {
+		String str = "ajmal";
+		String str1 = "ajmal";
+		String str2 = new String("Ajmal");
+		String str3 = new String("YellowMatics");
+		System.out.println(str==str1);
+		System.out.println(str.equals(str2));
+		System.out.println(str.equalsIgnoreCase(str3));
+		System.out.println(str.length());
+		System.out.println(str);
+		System.out.println(str.trim().length());
+		System.out.println(str.length());
+		System.out.println(str);
+		String word[]=str.split(" ");
+		for(String var:word)
+		{
+			System.out.println(var);
+		}
+		System.out.println(str3.substring(5));
+		System.out.println(str3.contains("AJ"));
+		System.out.println(str3.startsWith("Ye"));
+		System.out.println(str2.endsWith("AL"));
+		System.out.println(str3.charAt(3));
+		System.out.println(str3.concat(" Gether "));
+		System.out.println(str.toUpperCase());
+		
+
+	}
+
+}
