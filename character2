@@ -1,0 +1,10 @@
+public class character2 {
+
+	public static void main(String[] args) {
+		   char ch= 'c';
+	         char ch1=(char)(ch-32);
+	         System.out.println(ch1);
+
+	}
+
+}
