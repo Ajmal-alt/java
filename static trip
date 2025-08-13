@@ -1,0 +1,34 @@
+public class statictrip {
+	String place;
+	int expense;
+	String spot;
+	String hotelname;
+	String food;
+	int price;
+	public static void main(String[] args) {
+		statictrip obj = new statictrip();
+		System.out.println(obj.hotelname);
+		statictrip obj1 = new 	statictrip();
+		System.out.println(obj1.price);
+		statictrip obj2 = new statictrip();
+		System.out.println(obj2.place);
+		statictrip obj3 = new statictrip();
+		System.out.println(obj3.hotelname);
+		statictrip obj4 = new statictrip();
+		System.out.println(obj4.spot);
+		statictrip obj5 = new statictrip();
+		System.out.println(obj5.food);
+		obj.place="kodaikanal";
+		obj.expense=5000;
+		obj.spot="falls";
+		obj.price=50;
+		obj.hotelname="Maran";
+		obj.food="briyani";
+		System.out.println(obj.price);
+		System.out.println(obj.hotelname);
+		System.out.println(obj.place);
+		System.out.println(obj.expense);
+		System.out.println(obj.spot);
+		System.out.println(obj.food);
+	}
+}
