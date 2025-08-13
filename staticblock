@@ -1,0 +1,11 @@
+public class staticblock {
+     static
+     {
+    	 System.out.println("Mount Zion");
+     }
+	public static void main(String[] args) {
+		System.out.println("Nice to meet you");
+
+	}
+
+}
