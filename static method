@@ -1,0 +1,22 @@
+public class staticmethod {
+	 String name = "Ajmal";
+	    static String employee = "ABC";
+	    
+	    void display(int a, String name )
+	    {
+	    	System.out.println(a+" "+name+ " " +employee);
+	    }
+	    public static void show(int a)
+	    {
+	    	staticmethod.employee = "MountZion";
+	    	System.out.println(a+" "+employee);
+	    }
+	    
+	public static void main(String[] args) {
+	   staticmethod.show(55);
+	   staticmethod obj = new staticmethod();
+	   obj.display(65, "Ajmal");
+
+	}
+
+}
