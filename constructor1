@@ -1,0 +1,25 @@
+public class constructor1 
+{
+	int age;
+	String name;
+	constructor1()
+	{
+		System.out.println("HI");
+		
+		
+	}
+	constructor1(int a , String str)
+	{
+		age = a;
+		name = str;
+	}
+	void display()
+	{
+		System.out.println(age + " "+name);
+	}
+	public static void main(String[] args) {
+	constructor1 obj = new constructor1(5, "Rosh");
+	obj.display();
+	}
+
+}
