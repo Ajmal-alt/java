@@ -1,0 +1,32 @@
+class Grandpa
+{
+	void display()
+	{
+		System.out.println("Villa");
+	}
+}
+class Dad extends Grandpa
+{
+	void property()
+	{
+		System.out.println("House,Land,Money");
+	}
+}
+class Son extends Dad
+{
+	void show()
+	{
+		System.out.println("Bike");
+		
+	}
+}
+public class inheritance2 {
+
+	public static void main(String[] args) {
+		Son obj = new Son();
+		obj.property();
+		obj.show();
+		
+	}
+
+}
