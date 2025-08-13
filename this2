@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class this2 {
+
+    int a;            
+    String name;      
+
+   
+    this2() {
+        a = 5;
+        name = "Aju";
+        System.out.println("HI");
+    }
+
+
+    this2(int a, String str) {
+        this.a = a;
+        this.name = str;
+        System.out.println(a + " " + str);
+    }
+
+   
+    this2(float b) {
+        System.out.println(b);
+    }
+
+
+    void display() {
+        System.out.println(a + " " + name);
+    }
+
+ 
+    public static void main(String[] args) {
+        this2 obj = new this2();  
+        obj.display();              
+    }
+}
