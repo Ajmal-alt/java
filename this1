@@ -1,0 +1,16 @@
+public class this1 {
+  void display()
+  {
+	  System.out.println("Hello display");
+  }
+  void show()
+  {
+	  this.display();
+	  System.out.println("Hello show");
+  }
+	public static void main(String[] args) {
+		this1 obj = new this1();
+		obj.show();
+	}
+
+}
