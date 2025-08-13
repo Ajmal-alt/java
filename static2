@@ -1,0 +1,20 @@
+public class static2 {
+    String name = "Ajmal";
+    static String employee = "ABC";
+    
+    void display(int a, String name )
+    {
+    	System.out.println(a+" "+name+ " " +employee);
+    }
+    
+public static void main(String[] args) {
+	
+  static2 obj = new static2();
+  static2.employee = "XYZ";
+  obj.display(55, "Vicky");
+  obj.display(55, "Shiva");
+  obj.display(55, "Kiri");
+  obj.display(55, "rosh");
+}
+
+}
