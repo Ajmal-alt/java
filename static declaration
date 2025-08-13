@@ -1,0 +1,16 @@
+public class staticdeclaration {
+	String hotelname;
+	String food;
+	int price;
+	public static void main(String[] args) {
+		staticdeclaration obj = new staticdeclaration();
+		System.out.println(obj.hotelname);
+		staticdeclaration obj1 = new 	staticdeclaration();
+		System.out.println(obj1.price);
+		obj.price=50;
+		obj.hotelname="Maran";
+		System.out.println(obj.price);
+		System.out.println(obj.hotelname);
+	}
+
+}
