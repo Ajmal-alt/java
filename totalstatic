@@ -1,0 +1,35 @@
+public class totalstatic {
+    int rollno = 55;
+    String name = "Akash";
+    static String collegename = "Zion";
+    static
+    {
+   	 System.out.println("Mount Zion");
+    }
+    
+    void display(int a, String name )
+    {
+    	System.out.println(a+" "+name+ " " +collegename);
+    	System.out.println(a+" "+name+ " " +collegename);
+    }
+    public static void show(int a)
+    {
+    	totalstatic.collegename = "MountZion";
+    	System.out.println(a+" "+collegename);
+    }
+    
+public static void main(String[] args) {
+	
+  totalstatic obj = new totalstatic();
+  totalstatic.collegename = "Mount";
+  staticmethod.show(55);
+  staticmethod ob = new staticmethod();
+  obj.display(65, "Ajmal");
+  obj.display(55, "Akash");
+  obj.display(55, "Ajay");
+  obj.display(55, "Ashwin");
+  obj.display(55, "Arjun");
+  System.out.println("Nice to meet you");
+}
+
+}
