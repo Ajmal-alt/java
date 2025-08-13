@@ -1,0 +1,31 @@
+class Dad
+{
+	void property()
+	{
+		System.out.println("House,Land,money");
+	}
+}
+class Son extends Dad
+{
+	void show()
+	{
+		System.out.println("Bike");
+	}
+}
+class Daughter extends Dad
+{
+	void display()
+	{
+		System.out.println("Jewel");
+	}
+	}
+
+public class inheritence3 {
+
+	public static void main(String[] args) {
+		Daughter obj = new Daughter();
+		obj.property();
+
+	}
+
+}
