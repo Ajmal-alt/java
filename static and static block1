@@ -1,0 +1,21 @@
+public class static_and_static_block1 {
+	{
+		System.out.println("Non-static block Running");
+	}
+	static_and_static_block1()
+	{
+		System.out.println("Constructor");
+	}
+	static
+	{
+		System.out.println("Static Block Running");
+	}
+	public static void main(String[] args) {
+		System.out.println("Main Start");
+		new static_and_static_block1();
+		System.out.println("Main End");
+		new static_and_static_block1();
+		
+	}
+
+}
