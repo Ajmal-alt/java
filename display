@@ -1,0 +1,47 @@
+class AAA
+	{
+	int age;
+	String name;
+	double cgpa;
+	int marks;
+	AAA(int age)
+	{
+		this.age = age;
+	}
+	AAA(int age,String name)
+	{
+		this.age=age;
+		this.name=name;
+		
+	}
+	AAA(int age,String name,double cgpa)
+	{
+		this.age=age;
+		this.name=name;
+		this.cgpa=cgpa;
+	}
+	AAA(int age,String name,double cgpa,int mark)
+	{
+		this.age=age;
+		this.name=name;
+		this.cgpa=cgpa;
+		this.marks=mark;
+	}
+	
+	
+	public void display()
+	{
+		  System.out.println(age);
+	      System.out.println(name);
+	      System.out.println(cgpa);
+	      System.out.println(marks);
+	}
+	public class use_of_display {
+	public static void main(String[] args) {
+		new AAA(10).display();
+		new AAA(10,"bala").display();
+		new AAA(10,"bala",9.0).display();
+		new AAA(10,"bala",9.0,90).display();
+	}
+	}
+	}
