@@ -1,0 +1,37 @@
+class Main
+	{
+	int age;
+	String name;
+		double cgpa;
+		int marks;
+		Main(int age)
+		{
+			this.age=age;
+		}
+		Main(int age,String name)
+		{
+			this(age);
+			this.name=name;
+			
+		}
+		Main(int age,String name,double cgpa)
+		{
+			this(age,name);
+			this.cgpa=cgpa;
+		}
+		Main(int age,String name,double cgpa,int mark)
+		{
+			this(age,name,cgpa);
+			this.marks=mark;
+		}
+		
+		}
+		public class this_of {
+		public static void main(String[] args) {
+		new Main(10);
+		new Main(10,"bala");
+		new Main(10,"bala",9.0);
+		new Main(10,"bala",9.0,90);
+		}
+
+}
