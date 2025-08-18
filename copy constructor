@@ -1,0 +1,24 @@
+class BB
+{
+	int id;
+	public BB(int id)
+	{
+		this.id = id;
+	}
+	public BB(BB b)
+	{
+		this.id = b.id;
+	}
+}
+
+public class copy_constructor {
+
+	public static void main(String[] args) {
+                BB b = new BB(101);
+                BB b1 = new BB(b);
+                System.out.println(b.id);
+                System.out.println(b1.id);
+
+	}
+
+}
