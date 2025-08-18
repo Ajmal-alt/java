@@ -1,0 +1,37 @@
+class Vehicle
+{
+	int model;
+	Vehicle()
+	{
+		System.out.println("Vehicle Constructor");
+	}
+	Vehicle(int model)
+	{
+		this.model = model;
+	}
+}
+class Car extends Vehicle
+{
+	Car()
+	{
+		super ();
+	}
+}
+class Bike extends Vehicle
+{
+	Bike (int model)
+	{
+	super(10);	
+	this.model = model;
+	}
+}
+
+public class superkeyword {
+
+	public static void main(String[] args) {
+		new Car();
+		new Bike(101);
+
+	}
+
+}
