@@ -5,7 +5,7 @@
 
 package day16;
 import java.util.*;
-public class search4 {
+public class sort1 {
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner (System.in);
@@ -40,6 +40,7 @@ public class search4 {
 	}
 
 }
+
 
 
 
